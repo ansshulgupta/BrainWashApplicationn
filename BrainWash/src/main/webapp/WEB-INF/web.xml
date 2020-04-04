@@ -1,0 +1,59 @@
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+         
+	<display-name>Brain Wash Apps</display-name>
+	
+	<welcome-file-list>
+	<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+	
+	
+	<servlet>
+		<servlet-name>UserRegistrationProcessServlet</servlet-name>
+		<servlet-class>com.BrainWash.controller.UserRegistrationProcessServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>AdminInsertSpellingServlet</servlet-name>
+		<servlet-class>com.BrainWash.controller.AdminInsertSpellingServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>AdminMakeQuestionProcess</servlet-name>
+		<servlet-class>com.BrainWash.controller.AdminMakeQuestionProcess</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>LoggingoutProcess</servlet-name>
+		<servlet-class>com.BrainWash.controller.LoggingoutProcess</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>AdminRegistrationProcessServlet</servlet-name>
+		<servlet-class>com.BrainWash.controller.AdminRegistrationProcessServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>UserRegistrationProcessServlet</servlet-name>
+		<url-pattern>/UserRegistrationProcessServlet</url-pattern>
+	</servlet-mapping>	
+	
+	<servlet-mapping>
+		<servlet-name>AdminInsertSpellingServlet</servlet-name>
+		<url-pattern>/AdminInsertSpellingServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>AdminMakeQuestionProcess</servlet-name>
+		<url-pattern>/AdminMakeQuestionProcess</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>LoggingoutProcess</servlet-name>
+		<url-pattern>/LoggingoutProcess</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>AdminRegistrationProcessServlet</servlet-name>
+		<url-pattern>/AdminRegistrationProcessServlet</url-pattern>
+	</servlet-mapping>
+
+
+</web-app>
